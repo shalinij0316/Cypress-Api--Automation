@@ -20,21 +20,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Make directory for uploading the test results
-        run: mkdir -p test_results
-        
       - name: Cypress run 🧪
         uses: cypress-io/github-action@v5.1.0
       - run: npm run cypress:run
       - run: npm run report:merge
       - run: npm run report:mocha
       
-      
-      - name: Output the run details
-        uses: actions/upload-artifact@v3
-        if: always()
-        with:
-          name: test-run-reports
-          path: test_results
 
 
