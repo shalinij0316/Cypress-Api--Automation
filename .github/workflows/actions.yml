@@ -34,7 +34,7 @@ jobs:
         if: always()
         with:
           name: test-run-reports
-          path: test_results
+          path: Cypress-Api--Automation/Cypress-Api--Automation/mochawesome-report/index.html
       
 
 
