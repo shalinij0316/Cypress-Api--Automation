@@ -25,9 +25,12 @@ jobs:
 
       - name: Cypress run 🧪
         uses: cypress-io/github-action@v5.1.0
-      - run: cd test_results && npm run cypress:run
-      - run: cd test_results && npm run report:merge
-      - run: cd test_results && npm run report:mocha
+        
+      - name: Make directory for uploading the test results
+        run:  npm run report:merge
+          
+      - name: Make directory for uploading the test results
+        run:  npm run report:mocha
       
       - name: Deploy to GH Pages 🚀
         uses: peaceiris/actions-gh-pages@v3
