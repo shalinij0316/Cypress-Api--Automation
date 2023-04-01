@@ -21,7 +21,7 @@ jobs:
         run: npm install
         
       - name: Make directory for uploading the test results
-        run: mkdir -p test_results
+        run: mkdir -p mochawesome-repo
 
       - name: Cypress run 🧪
         uses: cypress-io/github-action@v5.1.0
