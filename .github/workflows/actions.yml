@@ -1,41 +1,21 @@
-name: Cypress CI
+name: Cypress Tests
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  schedule:
+    - cron: '0 0 * * 1'
 
 jobs:
-  build:
-
+  cypress-run:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [14.x]
-
     steps:
-    - uses: actions/checkout@v2
-    - name: Cypress tests using Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm i
-    - run: npm run cypress:run
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Cypress run 🧪
+        uses: cypress-io/github-action@v2
+      - run: npm run cypress:run
+      - run: npm run report:merge
+      - run: npm run report:mocha
 
 
-    - name: Copy test execution videos
-      run: |
-          mkdir -p test_results
-    - name: Merge test results into one
-      run: npm run report:merge
-    - name: Generate HTML report
-      run: npm run report:generate
-   
-              
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-       github_token: ${{ secrets.GITHUB_TOKEN }}
-       branch: ${{ github.ref }}
