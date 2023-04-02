@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-04-02T04:50:36.968Z",
+    "end": "2023-04-02T04:50:39.019Z",
+    "duration": 2051,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6782efce-8ab2-4069-9341-63e40603386c",
+      "title": "",
+      "fullFile": "cypress/integration/Users/tests/PUT.user.spec.js",
+      "file": "cypress/integration/Users/tests/PUT.user.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "00ca1c22-5689-4250-9f5f-fdac63ded913",
+          "title": "PUT Usuarios",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Update  user",
+              "fullTitle": "PUT Usuarios Update  user",
+              "timedOut": null,
+              "duration": 719,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"videos/Users/tests/PUT.user.spec.js.mp4\"",
+              "code": "PUTprodutos.putUser(id, name, job).should(function (updateUser) {\n  expect(updateUser.status).to.eq(200);\n});",
+              "err": {},
+              "uuid": "13ece4c4-fa66-405c-bd62-563115bac4e7",
+              "parentUUID": "00ca1c22-5689-4250-9f5f-fdac63ded913",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Patch  user",
+              "fullTitle": "PUT Usuarios Patch  user",
+              "timedOut": null,
+              "duration": 648,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"videos/Users/tests/PUT.user.spec.js.mp4\"",
+              "code": "PATCHprodutos.patchUser(id, name, job).should(function (patchUser) {\n  expect(patchUser.status).to.eq(200);\n});",
+              "err": {},
+              "uuid": "905e5d74-a160-44a0-9a82-b43c4046f109",
+              "parentUUID": "00ca1c22-5689-4250-9f5f-fdac63ded913",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Delete  user",
+              "fullTitle": "PUT Usuarios Delete  user",
+              "timedOut": null,
+              "duration": 660,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"videos/Users/tests/PUT.user.spec.js.mp4\"",
+              "code": "DELETEprodutos.deleteUser(id).should(function (deletUser) {\n  expect(deletUser.status).to.eq(204);\n});",
+              "err": {},
+              "uuid": "454fe821-083e-490f-a964-014e79fae6fd",
+              "parentUUID": "00ca1c22-5689-4250-9f5f-fdac63ded913",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "13ece4c4-fa66-405c-bd62-563115bac4e7",
+            "905e5d74-a160-44a0-9a82-b43c4046f109",
+            "454fe821-083e-490f-a964-014e79fae6fd"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2027,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reporterDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

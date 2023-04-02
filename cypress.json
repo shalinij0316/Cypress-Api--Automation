@@ -1,0 +1,11 @@
+{
+  "baseUrl": "https://reqres.in/",
+  "video": false,
+  "projectId": "ggh7sp",
+
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporter-config.json"
+  }
+
+}

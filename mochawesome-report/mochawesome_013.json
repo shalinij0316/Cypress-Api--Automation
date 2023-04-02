@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-04-02T04:50:35.229Z",
+    "end": "2023-04-02T04:50:35.656Z",
+    "duration": 427,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b97c9123-22c4-4f33-b97b-b9fe3e917a51",
+      "title": "",
+      "fullFile": "cypress/integration/Users/tests/POST.user.spec.js",
+      "file": "cypress/integration/Users/tests/POST.user.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "59504ba1-d575-4f9c-a10a-abf4d632468b",
+          "title": "POST /produtos",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should insert a product",
+              "fullTitle": "POST /produtos Should insert a product",
+              "timedOut": null,
+              "duration": 391,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"videos/Users/tests/POST.user.spec.js.mp4\"",
+              "code": "POSTprodutos.createProduct(body).as('response');\ncy.get('@response').then(function (response) {\n  expect(response.status).to.be.equal(201);\n});",
+              "err": {},
+              "uuid": "caac2537-7990-493c-abe3-8921c19e756e",
+              "parentUUID": "59504ba1-d575-4f9c-a10a-abf4d632468b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "caac2537-7990-493c-abe3-8921c19e756e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 391,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reporterDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
