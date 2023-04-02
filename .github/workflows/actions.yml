@@ -25,8 +25,11 @@ jobs:
 
       - name: Cypress run 🧪
         uses: cypress-io/github-action@v5.1.0
-      - run: npm run report:merge
-      - run: npm run report:mocha
+     
+      - name: Merge test results into one
+        run: npm run report:merge
+      - name: Generate HTML report
+        run: npm run report:generate
       
       - name: Deploy report page
         uses: peaceiris/actions-gh-pages@v3
