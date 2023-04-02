@@ -28,11 +28,13 @@ jobs:
       - run: npm run report:merge
       - run: npm run report:mocha
       
-      - name: Reports deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.3.3
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-            BRANCH: gh-pages
-            FOLDER: mochawesome-repo
+          branch: releases/v4
+          folder: .
+          clean: false
+          single-commit: true
       
 
 
