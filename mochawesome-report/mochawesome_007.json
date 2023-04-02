@@ -1,0 +1,157 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 0,
+    "pending": 0,
+    "failures": 3,
+    "start": "2023-04-02T05:29:46.434Z",
+    "end": "2023-04-02T05:29:48.661Z",
+    "duration": 2227,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a3fc8bbf-dc5e-4a85-864c-71126023e04a",
+      "title": "",
+      "fullFile": "cypress/integration/Users/tests/PUT.user.spec.js",
+      "file": "cypress/integration/Users/tests/PUT.user.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "eac50629-b766-43cc-9d0d-5ccb3f693420",
+          "title": "PUT Usuarios",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Update  user",
+              "fullTitle": "PUT Usuarios Update  user",
+              "timedOut": null,
+              "duration": 743,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"videos/Users/tests/PUT.user.spec.js.mp4\"",
+              "code": "PUTprodutos.putUser(id, name, job).should(function (updateUser) {\n  expect(updateUser.status).to.eq(200);\n});",
+              "err": {
+                "message": "CypressError: `cy.request()` failed on:\n\nhttps://reqres.in/api/users/The%20beautiful%20range%20of%20Apple%20Natural%C3%A9%20that%20has%20an%20exciting%20mix%20of%20natural%20ingredients.%20With%20the%20Goodness%20of%20100%%20Natural%20Ingredients\n\nThe response we received from your web server was:\n\n  > 400: Bad Request\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: PUT\nURL: https://reqres.in/api/users/The%20beautiful%20range%20of%20Apple%20Natural%C3%A9%20that%20has%20an%20exciting%20mix%20of%20natural%20ingredients.%20With%20the%20Goodness%20of%20100%%20Natural%20Ingredients\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 12_6_0) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/6.9.1 Chrome/87.0.4280.141 Electron/11.3.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 35\n}\nBody: {\"job\":\"Dynamic Paradigm Director\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 400 - Bad Request\nHeaders: {\n  \"server\": \"cloudflare\",\n  \"date\": \"Sun, 02 Apr 2023 05:29:47 GMT\",\n  \"content-type\": \"text/html\",\n  \"content-length\": \"155\",\n  \"connection\": \"close\",\n  \"cf-ray\": \"-\"\n}\nBody: <html>\r\n<head><title>400 Bad Request</title></head>\r\n<body>\r\n<center><h1>400 Bad Request</h1></center>\r\n<hr><center>cloudflare</center>\r\n</body>\r\n</html>\r\n\nhttps://on.cypress.io/request",
+                "estack": "CypressError: `cy.request()` failed on:\n\nhttps://reqres.in/api/users/The%20beautiful%20range%20of%20Apple%20Natural%C3%A9%20that%20has%20an%20exciting%20mix%20of%20natural%20ingredients.%20With%20the%20Goodness%20of%20100%%20Natural%20Ingredients\n\nThe response we received from your web server was:\n\n  > 400: Bad Request\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: PUT\nURL: https://reqres.in/api/users/The%20beautiful%20range%20of%20Apple%20Natural%C3%A9%20that%20has%20an%20exciting%20mix%20of%20natural%20ingredients.%20With%20the%20Goodness%20of%20100%%20Natural%20Ingredients\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 12_6_0) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/6.9.1 Chrome/87.0.4280.141 Electron/11.3.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 35\n}\nBody: {\"job\":\"Dynamic Paradigm Director\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 400 - Bad Request\nHeaders: {\n  \"server\": \"cloudflare\",\n  \"date\": \"Sun, 02 Apr 2023 05:29:47 GMT\",\n  \"content-type\": \"text/html\",\n  \"content-length\": \"155\",\n  \"connection\": \"close\",\n  \"cf-ray\": \"-\"\n}\nBody: <html>\r\n<head><title>400 Bad Request</title></head>\r\n<body>\r\n<center><h1>400 Bad Request</h1></center>\r\n<hr><center>cloudflare</center>\r\n</body>\r\n</html>\r\n\nhttps://on.cypress.io/request\n    at https://reqres.in/__cypress/runner/cypress_runner.js:160310:21\n    at tryCatcher (https://reqres.in/__cypress/runner/cypress_runner.js:10765:23)\n    at Promise._settlePromiseFromHandler (https://reqres.in/__cypress/runner/cypress_runner.js:8700:31)\n    at Promise._settlePromise (https://reqres.in/__cypress/runner/cypress_runner.js:8757:18)\n    at Promise._settlePromise0 (https://reqres.in/__cypress/runner/cypress_runner.js:8802:10)\n    at Promise._settlePromises (https://reqres.in/__cypress/runner/cypress_runner.js:8882:18)\n    at _drainQueueStep (https://reqres.in/__cypress/runner/cypress_runner.js:5472:12)\n    at _drainQueue (https://reqres.in/__cypress/runner/cypress_runner.js:5465:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://reqres.in/__cypress/runner/cypress_runner.js:5481:5)\n    at Async.drainQueues (https://reqres.in/__cypress/runner/cypress_runner.js:5351:14)\nFrom Your Spec Code:\n    at Context.eval (https://reqres.in/__cypress/tests?p=cypress/integration/Users/tests/PUT.user.spec.js:366:7)",
+                "diff": null
+              },
+              "uuid": "6716d443-01d8-4ab4-88f4-988020218bf3",
+              "parentUUID": "eac50629-b766-43cc-9d0d-5ccb3f693420",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Patch  user",
+              "fullTitle": "PUT Usuarios Patch  user",
+              "timedOut": null,
+              "duration": 723,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"videos/Users/tests/PUT.user.spec.js.mp4\"",
+              "code": "PATCHprodutos.patchUser(id, name, job).should(function (patchUser) {\n  expect(patchUser.status).to.eq(200);\n});",
+              "err": {
+                "message": "CypressError: `cy.request()` failed on:\n\nhttps://reqres.in/api/users/The%20beautiful%20range%20of%20Apple%20Natural%C3%A9%20that%20has%20an%20exciting%20mix%20of%20natural%20ingredients.%20With%20the%20Goodness%20of%20100%%20Natural%20Ingredients\n\nThe response we received from your web server was:\n\n  > 400: Bad Request\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: PATCH\nURL: https://reqres.in/api/users/The%20beautiful%20range%20of%20Apple%20Natural%C3%A9%20that%20has%20an%20exciting%20mix%20of%20natural%20ingredients.%20With%20the%20Goodness%20of%20100%%20Natural%20Ingredients\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 12_6_0) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/6.9.1 Chrome/87.0.4280.141 Electron/11.3.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 35\n}\nBody: {\"job\":\"Dynamic Paradigm Director\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 400 - Bad Request\nHeaders: {\n  \"server\": \"cloudflare\",\n  \"date\": \"Sun, 02 Apr 2023 05:29:47 GMT\",\n  \"content-type\": \"text/html\",\n  \"content-length\": \"155\",\n  \"connection\": \"close\",\n  \"cf-ray\": \"-\"\n}\nBody: <html>\r\n<head><title>400 Bad Request</title></head>\r\n<body>\r\n<center><h1>400 Bad Request</h1></center>\r\n<hr><center>cloudflare</center>\r\n</body>\r\n</html>\r\n\nhttps://on.cypress.io/request",
+                "estack": "CypressError: `cy.request()` failed on:\n\nhttps://reqres.in/api/users/The%20beautiful%20range%20of%20Apple%20Natural%C3%A9%20that%20has%20an%20exciting%20mix%20of%20natural%20ingredients.%20With%20the%20Goodness%20of%20100%%20Natural%20Ingredients\n\nThe response we received from your web server was:\n\n  > 400: Bad Request\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: PATCH\nURL: https://reqres.in/api/users/The%20beautiful%20range%20of%20Apple%20Natural%C3%A9%20that%20has%20an%20exciting%20mix%20of%20natural%20ingredients.%20With%20the%20Goodness%20of%20100%%20Natural%20Ingredients\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 12_6_0) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/6.9.1 Chrome/87.0.4280.141 Electron/11.3.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 35\n}\nBody: {\"job\":\"Dynamic Paradigm Director\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 400 - Bad Request\nHeaders: {\n  \"server\": \"cloudflare\",\n  \"date\": \"Sun, 02 Apr 2023 05:29:47 GMT\",\n  \"content-type\": \"text/html\",\n  \"content-length\": \"155\",\n  \"connection\": \"close\",\n  \"cf-ray\": \"-\"\n}\nBody: <html>\r\n<head><title>400 Bad Request</title></head>\r\n<body>\r\n<center><h1>400 Bad Request</h1></center>\r\n<hr><center>cloudflare</center>\r\n</body>\r\n</html>\r\n\nhttps://on.cypress.io/request\n    at https://reqres.in/__cypress/runner/cypress_runner.js:160310:21\n    at tryCatcher (https://reqres.in/__cypress/runner/cypress_runner.js:10765:23)\n    at Promise._settlePromiseFromHandler (https://reqres.in/__cypress/runner/cypress_runner.js:8700:31)\n    at Promise._settlePromise (https://reqres.in/__cypress/runner/cypress_runner.js:8757:18)\n    at Promise._settlePromise0 (https://reqres.in/__cypress/runner/cypress_runner.js:8802:10)\n    at Promise._settlePromises (https://reqres.in/__cypress/runner/cypress_runner.js:8882:18)\n    at _drainQueueStep (https://reqres.in/__cypress/runner/cypress_runner.js:5472:12)\n    at _drainQueue (https://reqres.in/__cypress/runner/cypress_runner.js:5465:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://reqres.in/__cypress/runner/cypress_runner.js:5481:5)\n    at Async.drainQueues (https://reqres.in/__cypress/runner/cypress_runner.js:5351:14)\nFrom Your Spec Code:\n    at Context.eval (https://reqres.in/__cypress/tests?p=cypress/integration/Users/tests/PUT.user.spec.js:366:7)",
+                "diff": null
+              },
+              "uuid": "dac01e68-a054-46f7-9743-7f62ec1f9924",
+              "parentUUID": "eac50629-b766-43cc-9d0d-5ccb3f693420",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Delete  user",
+              "fullTitle": "PUT Usuarios Delete  user",
+              "timedOut": null,
+              "duration": 682,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"videos/Users/tests/PUT.user.spec.js.mp4\"",
+              "code": "DELETEprodutos.deleteUser(id).should(function (deletUser) {\n  expect(deletUser.status).to.eq(204);\n});",
+              "err": {
+                "message": "CypressError: `cy.request()` failed on:\n\nhttps://reqres.in/api/users/The%20beautiful%20range%20of%20Apple%20Natural%C3%A9%20that%20has%20an%20exciting%20mix%20of%20natural%20ingredients.%20With%20the%20Goodness%20of%20100%%20Natural%20Ingredients\n\nThe response we received from your web server was:\n\n  > 400: Bad Request\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: DELETE\nURL: https://reqres.in/api/users/The%20beautiful%20range%20of%20Apple%20Natural%C3%A9%20that%20has%20an%20exciting%20mix%20of%20natural%20ingredients.%20With%20the%20Goodness%20of%20100%%20Natural%20Ingredients\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 12_6_0) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/6.9.1 Chrome/87.0.4280.141 Electron/11.3.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 0\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 400 - Bad Request\nHeaders: {\n  \"server\": \"cloudflare\",\n  \"date\": \"Sun, 02 Apr 2023 05:29:48 GMT\",\n  \"content-type\": \"text/html\",\n  \"content-length\": \"155\",\n  \"connection\": \"close\",\n  \"cf-ray\": \"-\"\n}\nBody: <html>\r\n<head><title>400 Bad Request</title></head>\r\n<body>\r\n<center><h1>400 Bad Request</h1></center>\r\n<hr><center>cloudflare</center>\r\n</body>\r\n</html>\r\n\nhttps://on.cypress.io/request",
+                "estack": "CypressError: `cy.request()` failed on:\n\nhttps://reqres.in/api/users/The%20beautiful%20range%20of%20Apple%20Natural%C3%A9%20that%20has%20an%20exciting%20mix%20of%20natural%20ingredients.%20With%20the%20Goodness%20of%20100%%20Natural%20Ingredients\n\nThe response we received from your web server was:\n\n  > 400: Bad Request\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: DELETE\nURL: https://reqres.in/api/users/The%20beautiful%20range%20of%20Apple%20Natural%C3%A9%20that%20has%20an%20exciting%20mix%20of%20natural%20ingredients.%20With%20the%20Goodness%20of%20100%%20Natural%20Ingredients\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 12_6_0) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/6.9.1 Chrome/87.0.4280.141 Electron/11.3.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 0\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 400 - Bad Request\nHeaders: {\n  \"server\": \"cloudflare\",\n  \"date\": \"Sun, 02 Apr 2023 05:29:48 GMT\",\n  \"content-type\": \"text/html\",\n  \"content-length\": \"155\",\n  \"connection\": \"close\",\n  \"cf-ray\": \"-\"\n}\nBody: <html>\r\n<head><title>400 Bad Request</title></head>\r\n<body>\r\n<center><h1>400 Bad Request</h1></center>\r\n<hr><center>cloudflare</center>\r\n</body>\r\n</html>\r\n\nhttps://on.cypress.io/request\n    at https://reqres.in/__cypress/runner/cypress_runner.js:160310:21\n    at tryCatcher (https://reqres.in/__cypress/runner/cypress_runner.js:10765:23)\n    at Promise._settlePromiseFromHandler (https://reqres.in/__cypress/runner/cypress_runner.js:8700:31)\n    at Promise._settlePromise (https://reqres.in/__cypress/runner/cypress_runner.js:8757:18)\n    at Promise._settlePromise0 (https://reqres.in/__cypress/runner/cypress_runner.js:8802:10)\n    at Promise._settlePromises (https://reqres.in/__cypress/runner/cypress_runner.js:8882:18)\n    at _drainQueueStep (https://reqres.in/__cypress/runner/cypress_runner.js:5472:12)\n    at _drainQueue (https://reqres.in/__cypress/runner/cypress_runner.js:5465:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://reqres.in/__cypress/runner/cypress_runner.js:5481:5)\n    at Async.drainQueues (https://reqres.in/__cypress/runner/cypress_runner.js:5351:14)\nFrom Your Spec Code:\n    at Context.eval (https://reqres.in/__cypress/tests?p=cypress/integration/Users/tests/PUT.user.spec.js:366:7)",
+                "diff": null
+              },
+              "uuid": "a1e66f16-0051-41cb-97e5-e4ef79ad431c",
+              "parentUUID": "eac50629-b766-43cc-9d0d-5ccb3f693420",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "6716d443-01d8-4ab4-88f4-988020218bf3",
+            "dac01e68-a054-46f7-9743-7f62ec1f9924",
+            "a1e66f16-0051-41cb-97e5-e4ef79ad431c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 2148,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reporterDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
