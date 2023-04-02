@@ -16,9 +16,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '16'
-
-      - name: Install dependencies
-        run: npm install
         
       - name: Make directory for uploading the test results
         run: mkdir -p mochawesome-repo
@@ -32,7 +29,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: releases/v4
-          folder: .
+          folder: mochawesome-repo
           clean: false
           single-commit: true
       
